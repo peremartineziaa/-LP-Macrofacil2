@@ -1,0 +1,6 @@
+{
+  "name": "Macro Fácil",
+  "description": "Calculadora inteligente de macros y constructor interactivo de dietas personalizadas para perder grasa, mantener peso o ganar músculo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
