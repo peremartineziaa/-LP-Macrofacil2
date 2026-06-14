@@ -8,18 +8,26 @@ interface NotificationItem {
 }
 
 const NOTIFICATIONS_LIST: NotificationItem[] = [
-  { name: 'María', city: 'Ciudad de México', plan: 'Plan VIP' },
+  { name: 'María', city: 'Barcelona', plan: 'Plan VIP' },
+  { name: 'Juan', city: 'Santiago de Chile', plan: 'Plan VIP' },
   { name: 'Carlos', city: 'Madrid', plan: 'Plan VIP' },
-  { name: 'Sofía', city: 'Santiago de Chile', plan: 'Plan VIP' },
+  { name: 'Sofía', city: 'Ciudad de México', plan: 'Plan VIP' },
   { name: 'Alejandro', city: 'Bogotá', plan: 'Plan VIP' },
   { name: 'Lucía', city: 'Buenos Aires', plan: 'Plan VIP' },
   { name: 'Mateo', city: 'Lima', plan: 'Plan VIP' },
+  { name: 'Elena', city: 'Zaragoza', plan: 'Plan VIP' },
   { name: 'Valentina', city: 'Guadalajara', plan: 'Plan VIP' },
-  { name: 'Diego', city: 'Barcelona', plan: 'Plan VIP' },
+  { name: 'Diego', city: 'Málaga', plan: 'Plan VIP' },
   { name: 'Camila', city: 'Medellín', plan: 'Plan VIP' },
   { name: 'Lucas', city: 'Valencia', plan: 'Plan VIP' },
   { name: 'Isabella', city: 'Quito', plan: 'Plan VIP' },
   { name: 'Daniel', city: 'Sevilla', plan: 'Plan VIP' },
+  { name: 'Javier', city: 'Bilbao', plan: 'Plan VIP' },
+  { name: 'Mariana', city: 'Caracas', plan: 'Plan VIP' },
+  { name: 'Nicolás', city: 'Montevideo', plan: 'Plan VIP' },
+  { name: 'Andrés', city: 'Alicante', plan: 'Plan VIP' },
+  { name: 'Paula', city: 'San José', plan: 'Plan VIP' },
+  { name: 'Gabriel', city: 'Guatemala', plan: 'Plan VIP' },
 ];
 
 export default function SocialProofAndMobileCTA() {
