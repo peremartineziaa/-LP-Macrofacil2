@@ -83,51 +83,75 @@ export default function PremiumPromo({ userProfile, calculatedReport, currentDie
   return (
     <div className="space-y-8" id="checkout-pricing-section">
       {/* Sales Pricing Card Box */}
-      <div className="bg-white/5 border border-white/10 text-white rounded-3xl p-6 md:p-10 shadow-xl backdrop-blur-2xl relative overflow-hidden text-center max-w-3xl mx-auto">
+      <div className="bg-white/5 border border-white/10 text-white rounded-3xl p-6 md:p-10 shadow-xl backdrop-blur-2xl relative overflow-hidden max-w-3xl mx-auto space-y-6">
         <div className="absolute right-0 top-0 translate-x-1/3 -translate-y-1/3 w-64 h-64 bg-orange-500/20 rounded-full blur-3xl opacity-25"></div>
         <div className="absolute left-0 bottom-0 -translate-x-1/3 translate-y-1/3 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl opacity-15"></div>
 
-        <div className="relative space-y-6">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-orange-500/20 text-orange-400 border border-orange-500/30">
+        <div className="relative space-y-6 text-center">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-orange-500/20 text-orange-400 border border-orange-500/30 mx-auto">
             <Flame className="w-3.5 h-3.5 text-orange-400 fill-orange-400 animate-pulse" />
-            ¡OFERTA DISPONIBLE SÓLO HOY!
+            ¡OFERTA DE ACCESO COMPLETO!
           </div>
 
           <div className="space-y-2">
             <h3 className="text-2xl md:text-3xl font-black tracking-tight leading-tight font-display">
-              Consigue el Sistema <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-200">Macro Fácil Pro</span> completo
+              Suscripción Única / Acceso Completo
             </h3>
-            <p className="text-sm text-white/70 max-w-lg mx-auto leading-relaxed">
-              Descarga la <strong className="text-white">Plantilla de Notion Original</strong> auto-calculable, desbloquea las guías en PDF e importa tus macros directamente para controlarlo todo desde el móvil.
+            <p className="text-sm text-white/75 max-w-xl mx-auto leading-relaxed">
+              La app que crea tus menús personalizados y calcula automáticamente tus calorías para que pierdas peso de forma simple, organizada y sostenible.
             </p>
+          </div>
+
+          {/* El sistema incluye - Checkbox List */}
+          <div className="bg-black/40 border border-white/5 rounded-2xl p-5 text-left space-y-3 max-w-xl mx-auto">
+            <span className="text-[10px] uppercase tracking-wider font-extrabold text-orange-400 block pb-1.5 border-b border-white/5">El Sistema Completo Incluye:</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-white/80">
+              <div className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-orange-400 shrink-0" />
+                <span>Acceso completo a la app interactiva</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-orange-400 shrink-0" />
+                <span>Creador interactivo de menús</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-orange-400 shrink-0" />
+                <span>Generador automático de raciones</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-orange-400 shrink-0" />
+                <span>Soporte de actualizaciones de por vida</span>
+              </div>
+              <div className="flex items-center gap-2 sm:col-span-2 text-orange-300 font-bold">
+                <Check className="w-4 h-4 text-orange-400 shrink-0" />
+                <span>Los 3 Bonos Exclusivos Incluidos</span>
+              </div>
+            </div>
           </div>
 
           {/* Value comparison */}
           <div className="grid grid-cols-3 max-w-md mx-auto bg-white/5 p-3 rounded-2xl border border-white/10 text-center text-xs text-white/50">
             <div>
-              <span className="block text-[10px] uppercase font-bold text-white/40">Valor Plantilla</span>
-              <span className="line-through text-red-400/80 font-bold font-mono">197€</span>
+              <span className="block text-[10px] uppercase font-bold text-white/40">Valor Sistema</span>
+              <span className="line-through text-red-400/80 font-bold font-mono">149€</span>
             </div>
             <div className="border-x border-white/10">
-              <span className="block text-[10px] uppercase font-bold text-white/40">Valor Bonos</span>
-              <span className="line-through text-red-400/80 font-bold font-mono">97€</span>
+              <span className="block text-[10px] uppercase font-bold text-white/40">Valor 3 Bonos</span>
+              <span className="line-through text-red-400/80 font-bold font-mono">111€</span>
             </div>
             <div>
-              <span className="block text-[10px] uppercase font-bold text-orange-400">Precio Normal</span>
-              <span className="font-extrabold text-white font-mono">27€</span>
+              <span className="block text-[10px] uppercase font-bold text-orange-400">Total Hoy</span>
+              <span className="font-extrabold text-white font-mono">19€</span>
             </div>
           </div>
 
           {/* Pricing tier main action */}
-          <div className="space-y-3 pt-3">
+          <div className="space-y-2 pt-1">
             <div className="flex justify-center items-baseline gap-2">
-              <span className="text-xs text-white/50 font-bold">HOY SOLO:</span>
+              <span className="text-xs text-white/50 font-bold">PRECIO ESPECIAL:</span>
               <span className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-200 tracking-tight font-mono">19€</span>
-              <span className="text-xs text-orange-300 font-semibold bg-orange-500/15 px-2 py-0.5 rounded-full border border-orange-500/20">Pago único, acceso de por vida</span>
+              <span className="text-xs text-orange-300 font-semibold bg-orange-500/15 px-2.5 py-0.5 rounded-full border border-orange-500/20">Pago único, sin cuotas mensuales</span>
             </div>
-            <p className="text-[11px] text-orange-400/90 font-medium italic">
-              Descuento especial por Lanzamiento de Primeros Clientes aplicado (-8€ extra).
-            </p>
           </div>
 
           {/* Big CTA Button */}
@@ -137,9 +161,9 @@ export default function PremiumPromo({ userProfile, calculatedReport, currentDie
                 href="https://buy.stripe.com/7sY00k4th5Od0oseY7enS00"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 bg-orange-500 hover:bg-orange-400 text-black font-black text-sm uppercase tracking-wider p-4 rounded-2xl shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 group cursor-pointer duration-200 text-center"
+                className="flex-1 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-black font-black text-sm uppercase tracking-wider p-4 rounded-2xl shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 group cursor-pointer duration-200 text-center"
               >
-                👉 COMPRAR SISTEMA COMPLETO AHORA
+                👉 COMPRAR ACCESO COMPLETO POR SOLO 19 €
                 <ArrowRight className="w-5 h-5 text-black transition-transform group-hover:translate-x-1" />
               </a>
               <button
@@ -149,12 +173,19 @@ export default function PremiumPromo({ userProfile, calculatedReport, currentDie
                 }}
                 className="px-6 py-4 bg-white/5 hover:bg-white/10 text-white/80 font-bold text-xs uppercase tracking-wider rounded-2xl border border-white/10 shadow-xs transition-all cursor-pointer text-center whitespace-nowrap"
               >
-                Simular Flujo / Descarga de Demo
+                Simular Flujo / Demo
               </button>
             </div>
             <span className="text-[10px] text-white/40 block mt-2.5 flex items-center justify-center gap-1">
-              <ShieldCheck className="w-3.5 h-3.5 text-orange-400" /> Garantía de Satisfacción 100% de 30 Días sin preguntas.
+              <ShieldCheck className="w-4 h-4 text-orange-400" /> Garantía de Satisfacción de 7 Días. Y si durante los primeros 7 días decides que no es para ti, puedes solicitar el reembolso.
             </span>
+          </div>
+
+          {/* Highlight citation banner */}
+          <div className="pt-4 border-t border-white/10 text-left max-w-xl mx-auto">
+            <p className="text-xs text-white/60 leading-relaxed italic text-center font-medium">
+              "La diferencia entre perder peso y seguir intentándolo durante años suele estar en tener un sistema claro. Sin un método organizado, es fácil caer en la improvisación y el abandono. Con este sistema, tienes todo lo necesario para avanzar con paso firme."
+            </p>
           </div>
         </div>
       </div>
